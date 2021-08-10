@@ -3,27 +3,21 @@
 // 5! = 1*2*3*4*5
 // 10! = 1*2*3*4*5*6*7*8*9*10
 
+// run with forLoop
 var factorial = 1;
-for (var i = 1; i <= 10; i++) {
-    console.log(i);
-}
-
-
-var factorial = 1;
-for (var i = 1; i <= 10; i++) {
-    factorial = factorial * i
+for (var i = 1; i <= 5; i++) {
+    factorial = factorial * i;
     console.log(i, factorial);
 }
 
-
-function factorial(n) {
+// run with function
+function (num) {
     var factorial = 1;
     for (var i = 1; i <= n; i++) {
-        factorial = factorial * i
+        factorial = factorial * i;
         console.log(i, factorial);
+        return factorial;
     }
-    return factorial;
 }
-var result = factorial(10);
+var result = factorial(6);
 console.log(result);
-
