@@ -26,3 +26,4 @@ function factorial(n) {
 }
 var result = factorial(10);
 console.log(result);
+
